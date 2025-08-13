@@ -17,6 +17,7 @@ This project is using official NYT and Google Cloud Translate APIs, secure crede
 
 ## Features
 
+-   **Multi-Subscription Support**: Process and send unique, customized digests to multiple recipients, each with their own language and topic preferences, all from a single configuration file.
 -   **Multi-Section Digest**: Fetches top stories from a list of sections (e.g., `world`, `science`, `technology`) defined in a simple configuration file.
 -   **AI-Powered Translation**: Uses the Google Cloud Translate API to translate headlines and abstracts into any supported language.
 -   **Official API Integration**: Connects directly to the NYT Top Stories API for reliable, structured news data, avoiding fragile web scraping.
@@ -81,11 +82,37 @@ EMAIL_HOST_PASSWORD="your-16-character-gmail-app-password"
 
 ### 4. Configure Settings
 
-Open `config.json` to customize your daily digest:
+Open config.json to configure your subscriptions. The file should contain a list of subscriptions, where each object represents one person's daily digest. You can add as many as you like.
+
 -   `api_sections`: A list of news sections you want in your digest.
 -   `max_stories_per_section`: How many stories to fetch from each section.
 -   `target_language`: The ISO 639-1 code for the language to translate to (e.g., "uk", "es", "fr").
 -   `recipient_emails`: A list of email addresses that will receive the daily digest.
+
+```json
+{
+  "subscriptions": [
+    {
+      "recipient_email": "user1@example.com",
+      "api_sections": ["world", "science"],
+      "max_stories_per_section": 3,
+      "target_language": "uk",
+      "target_language_name": "Ukrainian",
+      "email_locale": "uk_UA.UTF-8",
+      "email_subject_template": "Ваш щоденний дайджест від NYT: {date}",
+      "main_briefing_title_localized": "Щоденний дайджест від NY Times"
+    },
+    {
+      "recipient_email": "user2@example.com",
+      "api_sections": ["business", "sports"],
+      "max_stories_per_section": 5,
+      "target_language": "es",
+      ...
+    }
+  ]
+}
+```
+
 
 ## Usage
 
