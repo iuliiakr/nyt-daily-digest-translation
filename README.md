@@ -1,6 +1,13 @@
 # NYT Daily Translated Digest
 
-A fast and reliable Python script that fetches top stories from multiple, user-defined sections of The New York Times, translates them into a target language using the Google Cloud Translate API, and delivers them as a clean, daily email digest.
+## Challange
+A relative wants to read The New York Times, but isn't fluent with English and doesn't have time to browse through there web-site.
+She is interested only in World News, Tech, Science, Health, Books and Movies sections.
+She is ok with receiving daily emails with Top 5 Stories (excerpts) from each of these sections, if those stories are translated into her native language (Ukrainian).
+
+## Solution
+
+This Python script that fetches top stories from multiple, user-defined sections of The New York Times, translates them into a target language using the Google Cloud Translate API, and delivers them as a clean, daily email digest.
 
 This project is built to be robust, using official APIs, secure credential management, and polite rate-limiting practices.
 
