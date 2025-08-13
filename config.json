@@ -1,0 +1,20 @@
+{
+  "api_sections": [
+    "world",
+    "science",
+    "technology",
+    "health",
+    "food",
+    "books",
+    "movies"
+  ],
+  "max_stories_per_section": 5,
+  "target_language": "uk",
+  "target_language_name": "Ukrainian",
+  "email_locale": "uk_UA.UTF-8",
+  "recipient_emails": [
+    "gauri.julia@gmail.com"
+  ],
+  "email_subject_template": "Ваш щоденний дайджест від New York Times: {date}",
+  "main_briefing_title": "The New York Times Daily Digest"
+}
