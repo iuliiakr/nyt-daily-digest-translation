@@ -1,4 +1,4 @@
-# NYT Daily Translated Digest
+# The New York Times Daily Translated Digest
 
 ## Challange
 A relative wants to read The New York Times, but isn't fluent with English and doesn't have time to browse through there web-site.
