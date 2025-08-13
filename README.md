@@ -9,7 +9,7 @@ She is ok with receiving daily emails with Top 5 Stories (excerpts) from each of
 
 This Python script that fetches top stories from multiple, user-defined sections of The New York Times, translates them into a target language using the Google Cloud Translate API, and delivers them as a clean, daily email digest.
 
-This project is built to be robust, using official APIs, secure credential management, and polite rate-limiting practices.
+This project is using official NYT and Google Cloud Translate APIs, secure credential management, and polite rate-limiting practices.
 
 ### Example Email Output
 
