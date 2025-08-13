@@ -1,6 +1,6 @@
 # The New York Times Daily Translated Digest
 
-## Challange
+## Challenge
 A relative wants to read The New York Times, but isn't fluent with English and doesn't have time for browsing.
 She is interested only in World News, Tech, Science, Health, Books and Movies sections.
 She is ok with receiving daily emails with Top 5 Stories (excerpts) from each of these sections, if those stories are translated into her native language (Ukrainian).
