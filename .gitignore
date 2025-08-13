@@ -1,0 +1,14 @@
+# .gitignore
+
+# Environment variables
+.env
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# IDE-specific files
+.idea/
+.vscode/
+google_credentials.json
